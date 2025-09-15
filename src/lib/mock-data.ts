@@ -37,6 +37,16 @@ export interface MarketStats {
   volumeLast24h: string;
 }
 
+export interface Position {
+  id: string;
+  userAddress: string;
+  marketId: string;
+  type: "supply" | "borrow";
+  amount: string;
+  apy: string;
+  healthFactor: number;
+}
+
 export const mockMarkets: RWAMarket[] = [
   {
     id: "treasury-bills-1",
@@ -120,6 +130,36 @@ export const mockMarketStats: MarketStats = {
   totalUsers: 247,
   volumeLast24h: "$45.2M"
 };
+
+export const mockPositions: Position[] = [
+  {
+    id: "pos-1",
+    userAddress: "GABC123456789DEFGHIJKLMNOPQRSTUVWXYZ0123456789ABCDEF",
+    marketId: "treasury-bills-1",
+    type: "supply",
+    amount: "$125,000",
+    apy: "4.85%",
+    healthFactor: 2.1
+  },
+  {
+    id: "pos-2", 
+    userAddress: "GDEF456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789GHIJ",
+    marketId: "corporate-credit-1",
+    type: "borrow",
+    amount: "$50,000",
+    apy: "7.85%",
+    healthFactor: 1.8
+  },
+  {
+    id: "pos-3",
+    userAddress: "GHIJ789012345ABCDEFGHIJKLMNOPQRSTUVWXYZ6789KLMNO",
+    marketId: "real-estate-1", 
+    type: "supply",
+    amount: "$75,000",
+    apy: "7.45%",
+    healthFactor: 1.3
+  }
+];
 
 export const mockKycStatus = {
   status: "verified" as "pending" | "verified" | "rejected",

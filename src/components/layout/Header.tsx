@@ -33,8 +33,14 @@ export function Header() {
           <a href="/portfolio" className="text-body-2 text-fg-secondary hover:text-fg-primary transition-colors">
             Portfolio
           </a>
+          <a href="/kyc" className="text-body-2 text-fg-secondary hover:text-fg-primary transition-colors">
+            KYC
+          </a>
           <a href="/docs" className="text-body-2 text-fg-secondary hover:text-fg-primary transition-colors">
             Documentation
+          </a>
+          <a href="/admin" className="text-body-2 text-fg-secondary hover:text-fg-primary transition-colors">
+            Admin
           </a>
         </nav>
 
@@ -78,8 +84,14 @@ export function Header() {
             <a href="/portfolio" className="block py-2 text-body-2 text-fg-secondary hover:text-fg-primary transition-colors">
               Portfolio
             </a>
+            <a href="/kyc" className="block py-2 text-body-2 text-fg-secondary hover:text-fg-primary transition-colors">
+              KYC
+            </a>
             <a href="/docs" className="block py-2 text-body-2 text-fg-secondary hover:text-fg-primary transition-colors">
               Documentation
+            </a>
+            <a href="/admin" className="block py-2 text-body-2 text-fg-secondary hover:text-fg-primary transition-colors">
+              Admin
             </a>
           </nav>
         </div>

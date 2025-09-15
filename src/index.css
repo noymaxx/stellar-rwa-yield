@@ -262,3 +262,26 @@
     transform: scale(1);
   }
 }
+
+/* Enhanced button animations */
+.btn-primary {
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(77, 178, 255, 0.25);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Card hover animations */
+.card-institutional {
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card-institutional:hover {
+  border-color: rgba(77, 178, 255, 0.3);
+}

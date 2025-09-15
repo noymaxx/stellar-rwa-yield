@@ -172,7 +172,10 @@ export default function Markets() {
 
                 {/* Actions */}
                 <div className="flex gap-3 pt-2">
-                  <Button className="btn-primary flex-1">
+                  <Button 
+                    className="btn-primary flex-1"
+                    onClick={() => window.location.href = `/market/${market.id}`}
+                  >
                     View Market
                   </Button>
                   <Button variant="outline" className="flex-1">
